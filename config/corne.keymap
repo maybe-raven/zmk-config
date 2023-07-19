@@ -19,13 +19,44 @@
     };
 
     behaviors {
-        mkmm: mkmm {
+        bkmm: mkmm {
             compatible = "zmk,behavior-mod-morph";
-            label = "MEDIA_KEYS";
-            #binding-cells = <2>;
+            label = "BRIGHTNESS_KEY_MOD_MORPH";
             bindings =
-                <&kp>,
-                <&kp>;
+                <&kp C_BRIGHTNESS_DEC>,
+                <&kp C_BRIGHTNESS_INC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        vkmm: vkmm {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLUME_KEY_MOD_MORPH";
+            bindings =
+                <&kp C_VOLUME_DOWN>,
+                <&kp C_VOLUME_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        pnmm: pnmm {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PREVIOUS_NEXT_MOD_MORPH";
+            bindings =
+                <&kp LC(C_PREVIOUS)>,
+                <&kp C_NEXT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        mpmm: mpmm {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MUTE_PAUSE_MOD_MORPH";
+            bindings =
+                <&kp K_MUTE>,
+                <&kp C_PLAY_PAUSE>;
+
+            #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -44,10 +75,10 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE                   &kp N1                   &kp N2             &kp N3               &kp N4        &kp N5       &kp N6     &kp N7    &kp N8             &kp N9      &kp N0     &kp DELETE
-   &trans             &bt BT_SEL 0             &bt BT_SEL 1       &bt BT_SEL 2         &bt BT_SEL 3  &kp LEFT_ALT     &kp LEFT   &kp DOWN    &kp UP          &kp RIGHT  &kp LC(F3)    &kp PAGE_UP
-   &trans  &mkmm C_BRI_DN C_BRI_UP  &mkmm C_VOL_DN C_VOL_UP  &mkmm K_MUTE C_PP  &mkmm C_PREV C_NEXT    &caps_word    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RIGHT_BRACKET  &kp LG(F3)  &kp PAGE_DOWN
-                                                                        &trans               &trans        &trans       &trans     &trans    &trans
+&kp GRAVE        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       &kp N6     &kp N7    &kp N8             &kp N9      &kp N0     &kp DELETE
+   &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp LEFT_ALT     &kp LEFT   &kp DOWN    &kp UP          &kp RIGHT  &kp LC(F3)    &kp PAGE_UP
+   &trans         &bkmm         &vkmm         &mpmm         &pnmm    &caps_word    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RIGHT_BRACKET  &kp LG(F3)  &kp PAGE_DOWN
+                                             &trans        &trans        &trans       &trans     &trans    &trans
             >;
         };
     };
