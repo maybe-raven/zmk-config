@@ -58,9 +58,9 @@
         <&mo 2>,
         <&to 2>;
     };
-    bd: bspc_del {
+    bd: backspace_delete {
       compatible = "zmk,behavior-mod-morph";
-      label = "BSPC_DEL";
+      label = "BACKSPACE_DELETE";
       bindings =
         <&kp BSPC>,
         <&kp DEL>;
