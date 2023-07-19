@@ -19,9 +19,9 @@
     };
 
     behaviors {
-        bkmm: mkmm {
+        bkmm: bkmm {
             compatible = "zmk,behavior-mod-morph";
-            label = "BRIGHTNESS_KEY_MOD_MORPH";
+            label = "BRIGHTNESS_KEYS";
             bindings =
                 <&kp C_BRIGHTNESS_DEC>,
                 <&kp C_BRIGHTNESS_INC>;
@@ -31,7 +31,7 @@
         };
         vkmm: vkmm {
             compatible = "zmk,behavior-mod-morph";
-            label = "VOLUME_KEY_MOD_MORPH";
+            label = "VOLUME_KEYS";
             bindings =
                 <&kp C_VOLUME_DOWN>,
                 <&kp C_VOLUME_UP>;
@@ -41,9 +41,9 @@
         };
         pnmm: pnmm {
             compatible = "zmk,behavior-mod-morph";
-            label = "PREVIOUS_NEXT_MOD_MORPH";
+            label = "PREVIOUS_NEXT";
             bindings =
-                <&kp LC(C_PREVIOUS)>,
+                <&kp C_PREVIOUS>,
                 <&kp C_NEXT>;
 
             #binding-cells = <0>;
@@ -51,7 +51,7 @@
         };
         mpmm: mpmm {
             compatible = "zmk,behavior-mod-morph";
-            label = "MUTE_PAUSE_MOD_MORPH";
+            label = "MUTE_PAUSE";
             bindings =
                 <&kp K_MUTE>,
                 <&kp C_PLAY_PAUSE>;
