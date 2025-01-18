@@ -48,6 +48,16 @@
       quick-release;
       ignore-modifiers;
     };
+
+    slq: slq {
+      compatible = "zmk,behavior-sticky-key";
+      label = "SLQ";
+      bindings = <&mo>;
+      #binding-cells = <1>;
+      release-after-ms = <2000>;
+      quick-release;
+      ignore-modifiers;
+    };
   };
 
   combos { compatible = "zmk,combos"; };
@@ -59,17 +69,17 @@
       bindings = <
 &kp TAB     &kp Q        &kp W        &kp E       &kp R            &kp T        &kp Y    &kp U       &kp I       &kp O        &kp P           &kp BSPC
 &kp GRAVE   &hm GLOBE A  &hm LCTRL S  &hm LALT D  &hm LGUI F       &kp G        &kp H    &hm LGUI J  &hm RALT K  &hm RCTRL L  &hm GLOBE SEMI  &kp SQT
-&caps_word  &kp Z        &kp X        &kp C       &kp V            &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &none           &kp CAPSLOCK
-                                      &sl 2       &skq LEFT_SHIFT  &kp SPACE    &kp RET  &sl 1       &kp ESC
+&caps_word  &kp Z        &kp X        &kp C       &kp V            &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &kp LC(GLOBE)   &kp CAPSLOCK
+                                      &sl 2       &skq LEFT_SHIFT  &kp SPACE    &kp RET  &slq 1      &kp ESC
       >;
     };
 
     raise {
       bindings = <
-&trans  &kp BSLH  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp HOME        &kp PG_DN  &kp PG_UP  &kp END    &trans  &kp DELETE
-&trans  &kp FSLH  &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans    &kp N7  &kp N8  &kp N9  &kp N0       &kp LBKT        &kp RBKT   &trans     &trans     &trans  &trans
-                          &to 0   &trans  &trans       &trans          &to 0      &trans
+&trans  &kp BSLH  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &kp DELETE
+&trans  &kp FSLH  &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans    &kp N7  &kp N8  &kp N9  &kp N0       &kp LBKT  &kp RBKT   &trans     &trans     &trans  &trans
+                          &to 0   &trans  &trans       &trans    &to 0      &trans
       >;
     };
 
