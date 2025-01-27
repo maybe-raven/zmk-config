@@ -20,9 +20,12 @@
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
+      tapping-term-ms = <300>;
+      flavor = "balanced";
       bindings = <&kp>, <&kp>;
+
+      quick-tap-ms = <200>;
+      require-prior-idle-ms = <150>;
     };
 
     tdl1: tap_dance_layer_1 {
