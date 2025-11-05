@@ -42,7 +42,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "TAP_DANCE_LAYER_2";
       #binding-cells = <0>;
-      bindings = <&mo 3>, <&to 3>;
+      bindings = <&mo 4>, <&to 4>;
 
       tapping-term-ms = <250>;
     };
@@ -74,6 +74,16 @@
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <300>;
+    };
+
+    lin_accel: lin_accel {
+      compatible = "zmk,behavior-input-two-axis";
+      label = "LIN_ACCEL";
+      #binding-cells = <1>;
+      x-input-code = <0>;
+      y-input-code = <1>;
+      time-to-max-speed-ms = <400>;
+      acceleration-exponent = <2>;
     };
   };
 
@@ -109,12 +119,21 @@
       >;
     };
 
-    nav+mouse {
+    nav+scrl {
       bindings = <
-&trans  &kp GRAVE  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp DELETE  &trans
-&trans  &kp TAB    &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &to 3       &trans
-&trans  &trans     &trans          &trans          &trans        &trans             &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &none       &trans
-                                   &kp CAPSLOCK    &kp LSHIFT    &mkp LCLK          &mkp RCLK       &to 0           &to 0
+&trans  &kp GRAVE  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &none      &none      &kp UP     &none      &kp DELETE  &trans
+&trans  &kp TAB    &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &to 3      &kp LEFT   &kp DOWN   &kp RIGHT  &to 4       &trans
+&trans  &trans     &trans          &trans          &trans        &trans             &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none       &trans
+                                   &kp CAPSLOCK    &kp LSHIFT    &mkp LCLK          &mkp RCLK  &to 0      &to 0
+      >;
+    };
+
+    mouse {
+      bindings = <
+&trans  &kp GRAVE  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &none      &none                 &lin_accel MOVE_UP    &none                  &kp DELETE  &trans
+&trans  &kp TAB    &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &to 2      &lin_accel MOVE_LEFT  &lin_accel MOVE_DOWN  &lin_accel MOVE_RIGHT  &to 4       &trans
+&trans  &trans     &trans          &trans          &trans        &trans             &kp HOME   &kp PG_DN             &kp PG_UP             &kp END                &none       &trans
+                                   &kp CAPSLOCK    &kp LSHIFT    &mkp LCLK          &mkp RCLK  &to 0                 &to 0
       >;
     };
 
