@@ -123,19 +123,19 @@
 
     MOUSEFAST {
       bindings = <
-&trans  &kp GRAVE     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &to 2      &none           &mmv MOVE_UP    &kp BACKSPACE    &kp DELETE  &trans
-&trans  &kp TAB       &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &to 6       &trans
-&trans  &kp CAPSLOCK  &caps_word      &to 4           &to 0         &to 5              &kp HOME   &kp PG_DN       &kp PG_UP       &kp END          &none       &trans
-                                      &to 0           &kp LSHIFT    &mkp LCLK          &mkp RCLK  &trans          &none
+&kp TAB        &kp F2          &kp F3          &to 4           &to 3         &to 5              &to 2     &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp GRAVE      &kp GLOBE       &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
+&kp C_AC_EXIT  &kp C_AC_CLOSE  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME  &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
+                                               &to 0           &trans        &trans             &trans    &trans          &none
       >;
     };
 
     MOUSESLOW {
       bindings = <
-&trans  &kp GRAVE     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &to 2      &none           &mmv MOVE_UP    &kp BACKSPACE    &kp DELETE  &trans
-&trans  &kp TAB       &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &to 6       &trans
-&trans  &kp CAPSLOCK  &caps_word      &to 4           &to 0         &to 5              &kp HOME   &kp PG_DN       &kp PG_UP       &kp END          &none       &trans
-                                      &to 0           &kp LSHIFT    &mkp LCLK          &mkp RCLK  &trans          &none
+&kp TAB        &kp F2          &kp F3          &to 4           &to 3         &to 5              &to 2     &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp GRAVE      &kp GLOBE       &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
+&kp C_AC_EXIT  &kp C_AC_CLOSE  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME  &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
+                                               &to 0           &trans        &trans             &trans    &trans          &none
       >;
     };
 
