@@ -87,8 +87,8 @@
 
     base {
       bindings = <
-&kp TAB     &kp Q        &kp W        &kp E       &kp R       &kp T        &kp Y    &kp U       &kp I       &kp O        &kp P           &kp BSPC
-&kp GRAVE   &hm GLOBE A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G        &kp H    &hm RGUI J  &hm RALT K  &hm RCTRL L  &hm GLOBE SEMI  &kp APOS
+&kp GRAVE   &kp Q        &kp W        &kp E       &kp R       &kp T        &kp Y    &kp U       &kp I       &kp O        &kp P           &kp BSPC
+&kp TAB     &hm GLOBE A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G        &kp H    &hm RGUI J  &hm RALT K  &hm RCTRL L  &hm GLOBE SEMI  &kp APOS
 &caps_word  &kp Z        &kp X        &kp C       &kp V       &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &kp SLASH       &kp BACKSLASH
                                       &kp ESC     &kp LSHFT   &kp SPACE    &kp RET  &moto 1 1   &moto 2 2
       >;
@@ -105,8 +105,8 @@
 
     nav+scrl {
       bindings = <
-&kp TAB       &kp F2     &kp F3          &kp F4          &kp F5        &kp F6             &none     &to 3      &none      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
-&kp GRAVE     &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT                          &to 6                                   &trans
+&kp GRAVE     &kp F2     &kp F3          &kp F4          &kp F5        &kp F6             &none     &to 3      &none      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT                          &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &trans             &trans    &trans     &none
       >;
