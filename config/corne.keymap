@@ -114,8 +114,8 @@
 
     MOUSE {
       bindings = <
-&kp TAB       &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
-&kp GRAVE     &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
+&kp GRAVE     &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
       >;
@@ -123,8 +123,8 @@
 
     MOUSEFAST {
       bindings = <
-&kp TAB       &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
-&kp GRAVE     &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
+&kp GRAVE     &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
       >;
@@ -132,8 +132,8 @@
 
     MOUSESLOW {
       bindings = <
-&kp TAB       &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
-&kp GRAVE     &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
+&kp GRAVE     &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
       >;
