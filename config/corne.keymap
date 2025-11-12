@@ -20,7 +20,7 @@
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
 
-&mmv { time-to-max-speed-ms = <500>; };
+&mmv { acceleration-exponent = <0>; };
 
 &mmv_input_listener {
   set_mouse_fast {
