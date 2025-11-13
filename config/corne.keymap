@@ -15,7 +15,8 @@
 
 #define MOUSE 3
 #define MOUSEFAST 4
-#define MOUSESLOW 5
+#define MOUSESUPERFAST 5
+#define MOUSESLOW 6
 
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
@@ -26,6 +27,13 @@
   set_mouse_fast {
     layers = <MOUSEFAST>;
     input-processors = <&zip_xy_scaler 2 1>;
+  };
+};
+
+&mmv_input_listener {
+  set_mouse_super_fast {
+    layers = <MOUSESUPERFAST>;
+    input-processors = <&zip_xy_scaler 4 1>;
   };
 };
 
@@ -114,7 +122,7 @@
 
     MOUSE {
       bindings = <
-&kp GRAVE     &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp GRAVE     &kp F2     &to 5           &to 4           &to 3         &to 6              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
 &kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
@@ -123,7 +131,16 @@
 
     MOUSEFAST {
       bindings = <
-&kp GRAVE     &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp GRAVE     &kp F2     &to 5           &to 4           &to 3         &to 6              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
+&kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
+                                         &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
+      >;
+    };
+
+    MOUSESUPERFAST {
+      bindings = <
+&kp GRAVE     &kp F2     &to 5           &to 4           &to 3         &to 6              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
 &kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
@@ -132,7 +149,7 @@
 
     MOUSESLOW {
       bindings = <
-&kp GRAVE     &kp F2     &kp F3          &to 4           &to 3         &to 5              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
+&kp GRAVE     &kp F2     &to 5           &to 4           &to 3         &to 6              &to 2      &none           &mmv MOVE_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp DELETE
 &kp TAB       &kp GLOBE  &kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT          &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                    &to 6                                   &trans
 &kp CAPSLOCK  &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp HOME   &kp PG_DN       &kp PG_UP       &kp END                            &kp C_AC_BACK                           &kp C_AC_FORWARD
                                          &to 0           &trans        &mkp LCLK          &mkp RCLK  &trans          &none
