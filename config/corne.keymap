@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 #include <input/processors.dtsi>
@@ -95,19 +95,19 @@
 
     base {
       bindings = <
-&kp GRAVE   &kp Q        &kp W        &kp E       &kp R       &kp T        &kp Y    &kp U       &kp I       &kp O        &kp P           &kp BSPC
-&kp TAB     &hm GLOBE A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G        &kp H    &hm RGUI J  &hm RALT K  &hm RCTRL L  &hm GLOBE SEMI  &kp APOS
-&caps_word  &kp Z        &kp X        &kp C       &kp V       &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &kp SLASH       &to 1
+&kp GRAVE   &kp Q        &kp W        &kp F       &kp P       &kp B        &kp J    &kp L       &kp U       &kp Y        &kp SQT      &kp BSPC
+&kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LALT S  &hm LGUI T  &kp G        &kp M    &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE O  &to 1
+&caps_word  &kp Z        &kp X        &kp C       &kp D       &kp V        &kp K    &kp H       &kp COMMA   &kp DOT      &kp SEMI     &none
                                       &kp ESC     &kp LSHFT   &kp SPACE    &kp RET  &moto 2 2   &moto 3 3
       >;
     };
 
-    colemak {
+    qwerty {
       bindings = <
-&kp GRAVE   &kp Q        &kp W        &kp F           &kp P           &kp B        &kp J    &kp L            &kp U            &kp Y        &kp SQT      &kp BACKSPACE
-&kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LEFT_ALT S  &hm LEFT_GUI T  &kp G        &kp M    &hm RIGHT_GUI N  &hm RIGHT_ALT E  &hm RCTRL I  &hm GLOBE O  &none
-&caps_word  &kp Z        &kp X        &kp C           &kp D           &kp V        &kp K    &kp H            &kp COMMA        &kp DOT      &kp SEMI     &to 0
-                                      &kp ESC         &kp LSHFT       &kp SPACE    &kp RET  &moto 2 2        &moto 3 3
+&kp GRAVE   &kp Q        &kp W        &kp E       &kp R       &kp T        &kp Y    &kp U       &kp I       &kp O        &kp P           &kp BSPC
+&kp TAB     &hm GLOBE A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G        &kp H    &hm RGUI J  &hm RALT K  &hm RCTRL L  &hm GLOBE SEMI  &kp APOS
+&caps_word  &kp Z        &kp X        &kp C       &kp V       &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &kp SLASH       &to 0
+                                      &kp ESC     &kp LSHFT   &kp SPACE    &kp RET  &moto 2 2   &moto 3 3
       >;
     };
 
