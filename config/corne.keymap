@@ -167,7 +167,7 @@
 
     colemak {
       bindings = <
-&kp GRAVE   &kp Q        &kp W        &kp F           &kp P           &kp B        &kp J    &kp L            &kp Y            &kp U        &kp BSPC     &kp DEL
+&kp GRAVE   &kp Q        &kp W        &kp F           &kp P           &kp B        &kp J    &kp L            &kp U            &kp Y        &kp BSPC     &kp DEL
 &kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LEFT_ALT S  &hm LEFT_GUI T  &kp G        &kp M    &hm RIGHT_GUI N  &hm RIGHT_ALT E  &hm RCTRL I  &hm GLOBE O  &kp APOS
 &caps_word  &kp Z        &kp X        &kp C           &kp D           &kp V        &kp K    &kp H            &kp COMMA        &kp DOT      &kp SEMI     &to 0
                                       &kp ESC         &kp LSHFT       &kp SPACE    &kp RET  &moto 1 1        &moto 2 2
