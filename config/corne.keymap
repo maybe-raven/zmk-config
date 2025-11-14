@@ -97,7 +97,7 @@
       bindings = <
 &kp GRAVE   &kp Q        &kp W        &kp E       &kp R       &kp T        &kp Y    &kp U       &kp I       &kp O        &kp P           &kp BSPC
 &kp TAB     &hm GLOBE A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G        &kp H    &hm RGUI J  &hm RALT K  &hm RCTRL L  &hm GLOBE SEMI  &kp APOS
-&caps_word  &kp Z        &kp X        &kp C       &kp V       &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &kp SLASH       &kp BACKSLASH
+&caps_word  &kp Z        &kp X        &kp C       &kp V       &kp B        &kp N    &kp M       &kp COMMA   &kp DOT      &kp SLASH       &to 8
                                       &kp ESC     &kp LSHFT   &kp SPACE    &kp RET  &moto 1 1   &moto 2 2
       >;
     };
@@ -162,6 +162,15 @@
 &trans      &kp GLOBE     &kp LCTRL     &kp LALT      &kp LGUI      &trans          &trans      &kp RGUI      &kp RALT      &kp RCTRL   &kp GLOBE  &trans
 &bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP   &kp C_NEXT
                                         &to 0         &trans        &trans          &trans      &moto 1 1     &moto 2 2
+      >;
+    };
+
+    colemak {
+      bindings = <
+&kp GRAVE   &kp Q  &kp W  &kp F    &kp P      &kp B        &kp J    &kp L      &kp Y      &kp U    &kp BSPC  &kp DEL
+&kp TAB     &kp A  &kp R  &kp S    &kp T      &kp G        &kp M    &kp N      &kp E      &kp I    &kp O     &kp APOS
+&caps_word  &kp Z  &kp X  &kp C    &kp D      &kp V        &kp K    &kp H      &kp COMMA  &kp DOT  &kp SEMI  &to 0
+                          &kp ESC  &kp LSHFT  &kp SPACE    &kp RET  &moto 1 1  &moto 2 2
       >;
     };
   };
