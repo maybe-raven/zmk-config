@@ -96,7 +96,7 @@
     base {
       bindings = <
 &kp GRAVE   &kp Q        &kp W        &kp F       &kp R       &kp B        &kp J    &kp L       &kp U       &kp Y        &kp SEMI     &kp BSPC
-&kp TAB     &hm GLOBE A  &hm LCTRL S  &hm LALT O  &hm LGUI T  &kp G        &kp M    &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE P  &kp SQT
+&kp TAB     &hm GLOBE A  &hm LCTRL O  &hm LALT S  &hm LGUI T  &kp G        &kp M    &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE P  &kp SQT
 &caps_word  &kp Z        &kp X        &kp C       &kp D       &kp V        &kp K    &kp H       &kp COMMA   &kp DOT      &none        &to 1
                                       &kp ESC     &kp LSHFT   &kp SPACE    &kp RET  &moto 2 2   &moto 3 3
       >;
