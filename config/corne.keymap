@@ -95,10 +95,10 @@
 
     base {
       bindings = <
-&kp GRAVE   &kp Q        &kp W        &kp F       &kp P       &kp B        &kp J    &kp L       &kp U       &kp Y        &kp SEMI     &kp BSPC
-&kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LALT S  &hm LGUI T  &kp G        &kp M    &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE O  &kp SQT
-&caps_word  &kp Z        &kp X        &kp C       &kp D       &kp V        &kp K    &kp H       &kp COMMA   &kp DOT      &none        &to 1
-                                      &kp ESC     &kp LSHFT   &kp SPACE    &kp RET  &moto 2 2   &moto 3 3
+&kp GRAVE   &kp Q        &kp W        &kp F       &kp P       &kp B        &kp J        &kp L       &kp U       &kp Y        &kp SEMI     &kp BSPC
+&kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LALT S  &hm LGUI T  &kp G        &kp M        &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE O  &kp ENTER
+&caps_word  &kp Z        &kp X        &kp C       &kp D       &kp V        &kp K        &kp H       &kp COMMA   &kp DOT      &kp APOS     &to 1
+                                      &kp ESC     &kp LSHFT   &kp SPACE    &key_repeat  &moto 2 2   &moto 3 3
       >;
     };
 
