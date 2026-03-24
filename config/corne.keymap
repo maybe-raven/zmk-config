@@ -104,9 +104,9 @@
 
     typing {
       bindings = <
-&kp GRAVE   &kp Q  &kp W  &kp F    &kp P       &kp B        &kp J        &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp TAB     &kp A  &kp R  &kp S    &kp T       &kp G        &kp M        &kp N      &kp E      &kp I    &kp O     &kp ENTER
-&caps_word  &kp Z  &kp X  &kp C    &kp D       &kp V        &kp K        &kp H      &kp COMMA  &kp DOT  &kp APOS  &to 0
+&kp GRAVE   &kp Q  &kp W  &kp F    &kp P       &kp B        &kp J        &kp L      &kp U      &kp Y    &moto 0 0  &kp BSPC
+&kp TAB     &kp A  &kp R  &kp S    &kp T       &kp G        &kp M        &kp N      &kp E      &kp I    &kp O      &kp ENTER
+&caps_word  &kp Z  &kp X  &kp C    &kp D       &kp V        &kp K        &kp H      &kp COMMA  &kp DOT  &kp APOS   &none
                           &kp ESC  &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2  &moto 3 3
       >;
     };
