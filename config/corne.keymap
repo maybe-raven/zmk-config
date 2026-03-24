@@ -88,7 +88,19 @@
     };
   };
 
-  combos { compatible = "zmk,combos"; };
+  combos {
+    compatible = "zmk,combos";
+
+    to_typing {
+      bindings = <&to 1>;
+      key-positions = <7 9>;
+    };
+
+    to_base {
+      bindings = <&to 0>;
+      key-positions = <18 8>;
+    };
+  };
 
   keymap {
     compatible = "zmk,keymap";
