@@ -88,28 +88,16 @@
     };
   };
 
-  combos {
-    compatible = "zmk,combos";
-
-    to_typing {
-      bindings = <&to 1>;
-      key-positions = <7 9>;
-    };
-
-    to_base {
-      bindings = <&to 0>;
-      key-positions = <18 8>;
-    };
-  };
+  combos { compatible = "zmk,combos"; };
 
   keymap {
     compatible = "zmk,keymap";
 
     base {
       bindings = <
-&kp GRAVE   &kp Q        &kp W        &kp F       &kp P       &kp B        &kp J        &kp L       &kp U       &kp Y        &kp SEMI     &kp BSPC
-&kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LALT S  &hm LGUI T  &kp G        &kp M        &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE O  &kp ENTER
-&caps_word  &kp Z        &kp X        &kp C       &kp D       &kp V        &kp K        &kp H       &kp COMMA   &kp DOT      &kp APOS     &to 1
+&kp GRAVE   &kp Q  &kp W  &kp F    &kp P       &kp B        &kp J        &kp L      &kp U      &kp Y    &moto 0 0  &kp BSPC
+&kp TAB     &kp A  &kp R  &kp S    &kp T       &kp G        &kp M        &kp N      &kp E      &kp I    &kp O      &kp ENTER
+&caps_word  &kp Z  &kp X  &kp C    &kp D       &kp V        &kp K        &kp H      &kp COMMA  &kp DOT  &kp APOS   &none
                                       &kp ESC     &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2   &moto 3 3
       >;
     };
