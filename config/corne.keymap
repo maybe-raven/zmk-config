@@ -95,27 +95,27 @@
 
     base {
       bindings = <
-&kp GRAVE   &kp Q  &kp W  &kp F    &kp P       &kp B        &kp J        &kp L      &kp U      &kp Y    &moto 0 0  &kp BSPC
-&kp TAB     &kp A  &kp R  &kp S    &kp T       &kp G        &kp M        &kp N      &kp E      &kp I    &kp O      &kp ENTER
-&caps_word  &kp Z  &kp X  &kp C    &kp D       &kp V        &kp K        &kp H      &kp COMMA  &kp DOT  &kp APOS   &none
-                                      &kp ESC     &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2   &moto 3 3
+&kp GRAVE   &kp Q  &kp W  &kp F  &kp P       &kp B        &kp J        &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp TAB     &kp A  &kp R  &kp S  &kp T       &kp G        &kp M        &kp N      &kp E      &kp I    &kp O     &kp ENTER
+&caps_word  &kp Z  &kp X  &kp C  &kp D       &kp V        &kp K        &kp H      &kp COMMA  &kp DOT  &kp APOS  &none
+                          &mo 1  &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2  &moto 3 3
       >;
     };
 
-    typing {
+    mods {
       bindings = <
-&kp GRAVE   &kp Q  &kp W  &kp F    &kp P       &kp B        &kp J        &kp L      &kp U      &kp Y    &moto 0 0  &kp BSPC
-&kp TAB     &kp A  &kp R  &kp S    &kp T       &kp G        &kp M        &kp N      &kp E      &kp I    &kp O      &kp ENTER
-&caps_word  &kp Z  &kp X  &kp C    &kp D       &kp V        &kp K        &kp H      &kp COMMA  &kp DOT  &kp APOS   &none
-                          &kp ESC  &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2  &moto 3 3
+&trans  &trans     &trans     &trans    &trans    &trans    &trans      &trans    &trans    &trans     &trans     &trans
+&trans  &kp GLOBE  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans      &kp LGUI  &kp LALT  &kp LCTRL  &kp GLOBE  &trans
+&trans  &trans     &trans     &trans    &trans    &trans    &trans      &trans    &trans    &trans     &trans     &trans
+                              &trans    &trans    &trans    &kp LSHIFT  &trans    &trans
       >;
     };
 
     num+symbols {
       bindings = <
-&trans  &trans     &kp N7  &kp N8  &kp N9  &kp MINUS    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp BSLH  &trans           &trans
-&trans  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LBKT              &kp RBKT               &kp SQT    &kp SEMI  &kp EXCLAMATION  &trans
-&trans  &trans     &kp N1  &kp N2  &kp N3  &kp N0       &kp LESS_THAN         &kp GREATER_THAN       &kp COMMA  &kp DOT   &trans           &trans
+&trans  &trans     &kp N7  &kp N8  &kp N9  &kp MINUS    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp BSLH  &trans   &trans
+&trans  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LBKT              &kp RBKT               &kp SQT    &kp SEMI  &kp ESC  &trans
+&trans  &trans     &kp N1  &kp N2  &kp N3  &kp N0       &kp LESS_THAN         &kp GREATER_THAN       &kp COMMA  &kp DOT   &trans   &trans
                            &to 0   &trans  &trans       &trans                &none                  &trans
       >;
     };
