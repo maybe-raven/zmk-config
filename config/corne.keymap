@@ -46,15 +46,6 @@
 
 / {
   behaviors {
-    tm: tap_momentay {
-      compatible = "zmk,behavior-hold-tap";
-      label = "TAP_MOMENTAY";
-      #binding-cells = <2>;
-      tapping-term-ms = <300>;
-      flavor = "balanced";
-      bindings = <&mo>, <&kp>;
-    };
-
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
@@ -107,7 +98,7 @@
 &kp GRAVE   &kp Q        &kp W        &kp F       &kp P       &kp B        &kp J        &kp L       &kp U       &kp Y        &kp SEMI     &kp BSPC
 &kp TAB     &hm GLOBE A  &hm LCTRL R  &hm LALT S  &hm LGUI T  &kp G        &kp M        &hm RGUI N  &hm RALT E  &hm RCTRL I  &hm GLOBE O  &kp ENTER
 &caps_word  &kp Z        &kp X        &kp C       &kp D       &kp V        &kp K        &kp H       &kp COMMA   &kp DOT      &kp ESC      &to 1
-                                      &tm 1 ESC   &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2   &moto 3 3
+                                      &mo 1       &skq LSHFT  &kp SPACE    &key_repeat  &moto 2 2   &moto 3 3
       >;
     };
 
